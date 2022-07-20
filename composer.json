@@ -1,0 +1,60 @@
+{
+    "name": "thecodestash/laravel-jormall-sms-channel",
+    "description": "A Laravel implementation of JorMall's SMS gateway, ready to be used directly or as a Notification channel.",
+    "keywords": [
+        "thecodestash",
+        "laravel",
+        "laravel-jormall-sms-channel"
+    ],
+    "homepage": "https://github.com/thecodestash/laravel-jormall-sms-channel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yazan Stash",
+            "email": "stashyazan@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "spatie/laravel-package-tools": "^1.9.2",
+        "illuminate/contracts": "^9.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "nunomaduro/collision": "^6.0",
+        "orchestra/testbench": "^7.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "TheCodeStash\\JormallSms\\": "src",
+            "TheCodeStash\\JormallSms\\Database\\Factories\\": "database/factories"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TheCodeStash\\JormallSms\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TheCodeStash\\JormallSms\\JormallSmsServiceProvider"
+            ],
+            "aliases": {
+                "JormallSms": "TheCodeStash\\JormallSms\\Facades\\JormallSms"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
