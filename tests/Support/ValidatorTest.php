@@ -2,9 +2,9 @@
 
 namespace TheCodeStash\JormallSms\Tests\Support;
 
-use TheCodeStash\JormallSms\Tests\TestCase;
 use Illuminate\Validation\ValidationException;
 use TheCodeStash\JormallSms\Support\Validator;
+use TheCodeStash\JormallSms\Tests\TestCase;
 
 class ValidatorTest extends TestCase
 {

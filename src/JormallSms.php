@@ -2,8 +2,8 @@
 
 namespace TheCodeStash\JormallSms;
 
-use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Str;
 use TheCodeStash\JormallSms\Support\Formatter;
 
 class JormallSms

@@ -4,8 +4,8 @@ namespace TheCodeStash\JormallSms\Tests;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Notifications\Notification;
-use TheCodeStash\JormallSms\Facades\JormallSms;
 use TheCodeStash\JormallSms\Channels\JormallGeneralSmsChannel;
+use TheCodeStash\JormallSms\Facades\JormallSms;
 
 class JormallGeneralSmsChannelTest extends TestCase
 {
