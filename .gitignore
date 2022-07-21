@@ -2,5 +2,6 @@
 /vendor
 .env
 .phpunit.result.cache
+build/report.junit.xml
 npm-debug.log
 yarn-error.log

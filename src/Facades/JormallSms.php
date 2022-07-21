@@ -11,6 +11,6 @@ class JormallSms extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'laravel-jormall-sms-channel';
+        return \TheCodeStash\JormallSms\JormallSms::class;
     }
 }

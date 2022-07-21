@@ -4,7 +4,6 @@ namespace TheCodeStash\JormallSms;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use TheCodeStash\JormallSms\Commands\JormallSmsCommand;
 
 class JormallSmsServiceProvider extends PackageServiceProvider
 {
@@ -17,9 +16,6 @@ class JormallSmsServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-jormall-sms-channel')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-jormall-sms-channel_table')
-            ->hasCommand(JormallSmsCommand::class);
+            ->hasConfigFile('jormall-sms');
     }
 }

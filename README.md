@@ -4,8 +4,8 @@
 # A Laravel implementation of JorMall's SMS gateway, ready to be used directly or as a Notification channel.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/thecodestash/laravel-jormall-sms-channel.svg?style=flat-square)](https://packagist.org/packages/thecodestash/laravel-jormall-sms-channel)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/thecodestash/laravel-jormall-sms-channel/run-tests?label=tests)](https://github.com/thecodestash/laravel-jormall-sms-channel/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/thecodestash/laravel-jormall-sms-channel/Check%20&%20fix%20styling?label=code%20style)](https://github.com/thecodestash/laravel-jormall-sms-channel/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/thecodestash/laravel-jormall-sms-channel/run-tests?label=tests)](https://github.com/thecodestash/laravel-jormall-sms-channel/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/thecodestash/laravel-jormall-sms-channel/Check%20&%20fix%20styling?label=code%20style)](https://github.com/thecodestash/laravel-jormall-sms-channel/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/thecodestash/laravel-jormall-sms-channel.svg?style=flat-square)](https://packagist.org/packages/thecodestash/laravel-jormall-sms-channel)
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
@@ -71,7 +71,7 @@ Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed re
 
 ## Contributing
 
-Please see [CONTRIBUTING](https://github.com/Yazan-Stash/.github/blob/main/CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](https://github.com/Yazan-Stash/.github/blob/master/CONTRIBUTING.md) for details.
 
 ## Security Vulnerabilities
 
