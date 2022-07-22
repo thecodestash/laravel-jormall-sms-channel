@@ -18,9 +18,8 @@
     "require": {
         "php": "^8.0",
         "guzzlehttp/guzzle": "^7.4",
-        "illuminate/contracts": "^9.0",
-        "illuminate/http": "^9.21",
-        "spatie/laravel-package-tools": "^1.9.2"
+        "illuminate/contracts": "^9.9",
+        "illuminate/http": "^9.9"
     },
     "require-dev": {
         "laravel/pint": "^1.0",

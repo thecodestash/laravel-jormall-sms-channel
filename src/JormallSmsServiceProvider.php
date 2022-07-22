@@ -2,20 +2,12 @@
 
 namespace TheCodeStash\JormallSms;
 
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
-class JormallSmsServiceProvider extends PackageServiceProvider
+class JormallSmsServiceProvider extends ServiceProvider
 {
-    public function configurePackage(Package $package): void
+    public function register()
     {
-        /*
-         * This class is a Package Service Provider
-         *
-         * More info: https://github.com/spatie/laravel-package-tools
-         */
-        $package
-            ->name('laravel-jormall-sms-channel')
-            ->hasConfigFile('jormall-sms');
+        $this->mergeConfigFrom(__DIR__.'/../config/jormall-sms.php', 'jormall-sms');
     }
 }
