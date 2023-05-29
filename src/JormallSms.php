@@ -17,7 +17,7 @@ class JormallSms
     {
         $url = config('jormall-sms.baseurl').'/SMS/API/GetBalance';
 
-        $response = Http::throw()->get($url, [
+        $response = Http::withoutVerifying()->throw()->get($url, [
             'AccName' => config('jormall-sms.account_name'),
             'AccPass' => config('jormall-sms.account_password'),
         ]);
@@ -29,7 +29,7 @@ class JormallSms
     {
         $url = config('jormall-sms.baseurl').'/SMSServices/Clients/Prof/RestSingleSMS_General/SendSMS';
 
-        $response = Http::throw()->get($url, [
+        $response = Http::withoutVerifying()->throw()->get($url, [
             'AccName' => config('jormall-sms.account_name'),
             'AccPass' => config('jormall-sms.account_password'),
             'senderid' => config('jormall-sms.sender_id'),
@@ -48,7 +48,7 @@ class JormallSms
         $url = config('jormall-sms.baseurl').'/sms/api/SendBulkMessages.cfm';
         $timeout = 5000000;
 
-        $response = Http::timeout($timeout)->throw()->get($url, [
+        $response = Http::withoutVerifying()->timeout($timeout)->throw()->get($url, [
             'AccName' => config('jormall-sms.account_name'),
             'AccPass' => config('jormall-sms.account_password'),
             'senderid' => config('jormall-sms.sender_id'),
@@ -67,7 +67,7 @@ class JormallSms
     {
         $url = config('jormall-sms.baseurl').'/SMSServices/Clients/Prof/RestSingleSMS/SendSMS';
 
-        $response = Http::throw()->get($url, [
+        $response = Http::withoutVerifying()->throw()->get($url, [
             'AccName' => config('jormall-sms.account_name'),
             'AccPass' => config('jormall-sms.account_password'),
             'senderid' => config('jormall-sms.sender_id'),
