@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-jormall-sms-channel` will be documented in this file.
 
+## v0.1.2 - 2023-05-31
+
+Disable SSL verification because JorMall's certificates sometimes fails verification.
+
 ## v0.1.1 - 2022-07-22
 
 ### What's Changed
