@@ -4,12 +4,13 @@ namespace TheCodeStash\JormallSms\Tests;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Notifications\Notification;
+use PHPUnit\Framework\Attributes\Test;
 use TheCodeStash\JormallSms\Channels\JormallGeneralSmsChannel;
 use TheCodeStash\JormallSms\Facades\JormallSms;
 
 class JormallGeneralSmsChannelTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function sms_is_sent_via_jormall()
     {
         $notification = new NotificationJormallGeneralSmsChannelTestNotification;

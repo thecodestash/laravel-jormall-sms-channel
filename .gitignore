@@ -1,5 +1,7 @@
 /node_modules
 /vendor
+/build
+/.phpunit.cache
 .env
 .phpunit.result.cache
 build/report.junit.xml
