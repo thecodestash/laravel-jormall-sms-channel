@@ -2,10 +2,10 @@
 
 namespace TheCodeStash\JormallSms\Tests\Support;
 
-use PHPUnit\Framework\Attributes\Test;
-use TheCodeStash\JormallSms\Tests\TestCase;
 use Illuminate\Validation\ValidationException;
+use PHPUnit\Framework\Attributes\Test;
 use TheCodeStash\JormallSms\Support\Validator;
+use TheCodeStash\JormallSms\Tests\TestCase;
 
 class ValidatorTest extends TestCase
 {
@@ -53,7 +53,6 @@ class ValidatorTest extends TestCase
             $this->validator->validateNumber('062222222222');
         } catch (ValidationException $exception) {
             $this->assertStringContainsString('The number field format is invalid.', $exception->getMessage());
-
 
             return;
         }

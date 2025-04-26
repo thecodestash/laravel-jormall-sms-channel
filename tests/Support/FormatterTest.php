@@ -3,8 +3,8 @@
 namespace TheCodeStash\JormallSms\Tests\Support;
 
 use PHPUnit\Framework\Attributes\Test;
-use TheCodeStash\JormallSms\Tests\TestCase;
 use TheCodeStash\JormallSms\Support\Formatter;
+use TheCodeStash\JormallSms\Tests\TestCase;
 
 class FormatterTest extends TestCase
 {

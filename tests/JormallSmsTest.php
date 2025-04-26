@@ -3,8 +3,8 @@
 namespace TheCodeStash\JormallSms\Tests;
 
 use Illuminate\Support\Facades\Http;
-use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Validation\ValidationException;
+use PHPUnit\Framework\Attributes\Test;
 use TheCodeStash\JormallSms\Facades\JormallSms;
 
 class JormallSmsTest extends TestCase
