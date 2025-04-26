@@ -2,8 +2,9 @@
 
 namespace TheCodeStash\JormallSms\Tests\Support;
 
-use TheCodeStash\JormallSms\Support\Formatter;
+use PHPUnit\Framework\Attributes\Test;
 use TheCodeStash\JormallSms\Tests\TestCase;
+use TheCodeStash\JormallSms\Support\Formatter;
 
 class FormatterTest extends TestCase
 {
@@ -16,25 +17,25 @@ class FormatterTest extends TestCase
         $this->formatter = resolve(Formatter::class);
     }
 
-    /** @test */
+    #[Test]
     public function formats_local_numbers()
     {
         $this->assertEquals('962799222222', $this->formatter->formatNumber('0799222222'));
     }
 
-    /** @test */
+    #[Test]
     public function formats_international_numbers_with_leading_zeros()
     {
         $this->assertEquals('962799222222', $this->formatter->formatNumber('00962799222222'));
     }
 
-    /** @test */
+    #[Test]
     public function formats_international_numbers_with_leading_plus()
     {
         $this->assertEquals('962799222222', $this->formatter->formatNumber('+962799222222'));
     }
 
-    /** @test */
+    #[Test]
     public function formats_an_array_of_numbers_in_different_cases()
     {
         $this->assertEquals(
@@ -43,7 +44,7 @@ class FormatterTest extends TestCase
         );
     }
 
-    /** @test */
+    #[Test]
     public function encodes_percentage_and_ampersand_signs_in_the_message_body()
     {
         $this->assertEquals(

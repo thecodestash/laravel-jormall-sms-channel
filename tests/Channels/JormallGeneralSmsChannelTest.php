@@ -2,19 +2,20 @@
 
 namespace TheCodeStash\JormallSms\Tests;
 
+use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Notifications\Notification;
-use TheCodeStash\JormallSms\Channels\JormallGeneralSmsChannel;
 use TheCodeStash\JormallSms\Facades\JormallSms;
+use TheCodeStash\JormallSms\Channels\JormallGeneralSmsChannel;
 
 class JormallGeneralSmsChannelTest extends TestCase
 {
-    /** @test */
+    #[Test]
     public function sms_is_sent_via_jormall()
     {
-        $notification = new NotificationJormallGeneralSmsChannelTestNotification;
-        $notifiable = new NotificationJormalGeneralSmsChannelTestNotifiable;
-        $channel = new JormallGeneralSmsChannel;
+        $notification = new NotificationJormallGeneralSmsChannelTestNotification();
+        $notifiable = new NotificationJormalGeneralSmsChannelTestNotifiable();
+        $channel = new JormallGeneralSmsChannel();
 
         JormallSms::shouldReceive('send')
             ->with('962799222222', 'Test message.')

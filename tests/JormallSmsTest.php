@@ -3,6 +3,7 @@
 namespace TheCodeStash\JormallSms\Tests;
 
 use Illuminate\Support\Facades\Http;
+use PHPUnit\Framework\Attributes\Test;
 use Illuminate\Validation\ValidationException;
 use TheCodeStash\JormallSms\Facades\JormallSms;
 
@@ -13,7 +14,7 @@ class JormallSmsTest extends TestCase
         parent::setUp();
     }
 
-    /** @test */
+    #[Test]
     public function gets_account_balance()
     {
         Http::fake([
@@ -25,7 +26,7 @@ class JormallSmsTest extends TestCase
         $this->assertEquals(789, $balance);
     }
 
-    /** @test */
+    #[Test]
     public function sends_a_general_sms()
     {
         Http::fake([
@@ -37,7 +38,7 @@ class JormallSmsTest extends TestCase
         $this->assertEquals(['message_id' => '101010101'], $response);
     }
 
-    /** @test */
+    #[Test]
     public function throws_an_exception_when_sending_a_general_message_if_the_number_is_not_a_valid_jordanian_number()
     {
         try {
@@ -51,7 +52,7 @@ class JormallSmsTest extends TestCase
         $this->fail('Expected exception was not thrown.');
     }
 
-    /** @test */
+    #[Test]
     public function sends_an_otp_sms()
     {
         Http::fake([
@@ -63,7 +64,7 @@ class JormallSmsTest extends TestCase
         $this->assertEquals(['message_id' => '101010101'], $response);
     }
 
-    /** @test */
+    #[Test]
     public function throws_an_exception_when_sending_an_otp_message_if_the_number_is_not_a_valid_jordanian_number()
     {
         try {
